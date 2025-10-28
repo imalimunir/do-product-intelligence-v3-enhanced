@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigitalOcean Product Intelligence v3.0-Enhanced-A3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="header-left">
+                    <h1 class="header-title">DigitalOcean Product Intelligence</h1>
+                    <span class="version-badge">v3.0-Enhanced-A3-Complete</span>
+                    <div class="live-indicator">
+                        <span class="indicator-dot"></span>
+                        Live Updates
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div class="product-counter">
+                        <span id="selected-count">0</span> / <span id="total-count">35</span> Products
+                    </div>
+                    <div class="cost-savings">
+                        Potential Savings: <span id="cost-savings">$0</span>/month
+                    </div>
+                    <button class="btn btn--primary export-btn" id="export-btn">
+                        Export Report
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <div class="main-container">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="search-container">
+                    <input type="text" id="search-input" class="search-input" placeholder="Search products...">
+                </div>
+                
+                <div id="categories-container" class="categories">
+                    <!-- Categories will be dynamically generated -->
+                </div>
+            </aside>
+
+            <!-- Main Content Area -->
+            <main class="main-content">
+                <div id="selected-products-container" class="selected-products-container">
+                    <div class="empty-state">
+                        <h3>Select Products to View Details</h3>
+                        <p>Choose products from the sidebar to see comprehensive information including features, pricing, competitive advantages, and optimization tips.</p>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
