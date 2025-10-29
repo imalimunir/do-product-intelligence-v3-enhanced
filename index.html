@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DigitalOcean Product Intelligence v3.0-Enhanced-A3</title>
+    <title>DigitalOcean Product Intelligence v3.0</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -38,21 +38,125 @@
             <!-- Sidebar -->
             <aside class="sidebar">
                 <div class="search-container">
-                    <input type="text" id="search-input" class="search-input" placeholder="Search products...">
+                    <input type="text" id="search-input" class="form-control search-input" placeholder="Search products...">
                 </div>
                 
-                <div id="categories-container" class="categories">
-                    <!-- Categories will be dynamically generated -->
+                <div class="categories">
+                    <div class="category-section">
+                        <h3 class="category-title" data-category="ai_ml">
+                            <span class="category-icon">🤖</span>
+                            AI/ML Services
+                            <span class="category-count">(4)</span>
+                        </h3>
+                        <div class="category-products" id="ai_ml-products">
+                            <!-- Products will be populated by JavaScript -->
+                        </div>
+                    </div>
+
+                    <div class="category-section">
+                        <h3 class="category-title" data-category="compute">
+                            <span class="category-icon">⚡</span>
+                            Compute Services
+                            <span class="category-count">(4)</span>
+                        </h3>
+                        <div class="category-products" id="compute-products">
+                            <!-- Products will be populated by JavaScript -->
+                        </div>
+                    </div>
+
+                    <div class="category-section">
+                        <h3 class="category-title" data-category="databases">
+                            <span class="category-icon">🗄️</span>
+                            Database Engines
+                            <span class="category-count">(6)</span>
+                        </h3>
+                        <div class="category-products" id="databases-products">
+                            <!-- Products will be populated by JavaScript -->
+                        </div>
+                    </div>
+
+                    <div class="category-section">
+                        <h3 class="category-title" data-category="storage">
+                            <span class="category-icon">💾</span>
+                            Storage
+                            <span class="category-count">(6)</span>
+                        </h3>
+                        <div class="category-products" id="storage-products">
+                            <!-- Products will be populated by JavaScript -->
+                        </div>
+                    </div>
+
+                    <div class="category-section">
+                        <h3 class="category-title" data-category="networking">
+                            <span class="category-icon">🌐</span>
+                            Networking
+                            <span class="category-count">(10)</span>
+                        </h3>
+                        <div class="category-products" id="networking-products">
+                            <!-- Products will be populated by JavaScript -->
+                        </div>
+                    </div>
+
+                    <div class="category-section">
+                        <h3 class="category-title" data-category="monitoring">
+                            <span class="category-icon">📊</span>
+                            Monitoring
+                            <span class="category-count">(4)</span>
+                        </h3>
+                        <div class="category-products" id="monitoring-products">
+                            <!-- Products will be populated by JavaScript -->
+                        </div>
+                    </div>
+
+                    <div class="category-section">
+                        <h3 class="category-title" data-category="management">
+                            <span class="category-icon">🏢</span>
+                            Management
+                            <span class="category-count">(1)</span>
+                        </h3>
+                        <div class="category-products" id="management-products">
+                            <!-- Products will be populated by JavaScript -->
+                        </div>
+                    </div>
+
+                    <div class="category-section">
+                        <h3 class="category-title" data-category="api">
+                            <span class="category-icon">🔌</span>
+                            API
+                            <span class="category-count">(1)</span>
+                        </h3>
+                        <div class="category-products" id="api-products">
+                            <!-- Products will be populated by JavaScript -->
+                        </div>
+                    </div>
                 </div>
             </aside>
 
             <!-- Main Content Area -->
             <main class="main-content">
-                <div id="selected-products-container" class="selected-products-container">
-                    <div class="empty-state">
-                        <h3>Select Products to View Details</h3>
-                        <p>Choose products from the sidebar to see comprehensive information including features, pricing, competitive advantages, and optimization tips.</p>
+                <div class="welcome-message" id="welcome-message">
+                    <div class="welcome-content">
+                        <h2>DigitalOcean Product Intelligence Dashboard</h2>
+                        <p>Select products from the sidebar to view comprehensive intelligence including competitive advantages, optimization recommendations, and the latest updates.</p>
+                        <div class="welcome-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">35</span>
+                                <span class="stat-label">Products Available</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">8</span>
+                                <span class="stat-label">Categories</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">30-95%</span>
+                                <span class="stat-label">Avg Cost Savings</span>
+                            </div>
+                        </div>
                     </div>
+                </div>
+
+                <div class="selected-products" id="selected-products">
+                    <!-- Selected products will be displayed here -->
                 </div>
             </main>
         </div>
